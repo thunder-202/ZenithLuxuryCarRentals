@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith Luxury Car Rentals | Drive Your Dream in Melbourne</title>
+    <meta name="description" content="Drive Your Dream. Experience the Extraordinary with Melbourne's premier luxury and supercar rental fleet at 230 Collins Street. Supercars, luxury sedans, and prestige SUVs." />
+    <meta property="og:title" content="Zenith Luxury Car Rentals | Melbourne" />
+    <meta property="og:description" content="Drive Your Dream. Experience the Extraordinary with Melbourne's premier luxury and supercar rental fleet at 230 Collins Street." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Pure CSS Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
+         Header & Sticky Navigation
+         ========================================================================== -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-container">
+        <a href="#hero" class="brand-logo" id="brandLogo" aria-label="Zenith Luxury Car Rentals Home">
+          <div class="brand-crest">Z</div>
+          <div class="brand-text">
+            <span class="brand-name">Zenith</span>
+            <span class="brand-sub">Luxury Rentals</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#fleet" class="nav-link">Fleet Collection</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#details" class="nav-link">Location & Hours</a></li>
+            <li><a href="#booking" class="nav-link">Reserve</a></li>
+          </ul>
+        </nav>
+
+        <!-- Desktop Action Call & CTA -->
+        <div class="nav-actions">
+          <a href="tel:+61396548888" class="nav-phone-quick" id="headerPhoneLink" aria-label="Call Zenith Concierge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+61 3 9654 8888</span>
+          </a>
+          <a href="#booking" class="btn-primary btn-sm" id="headerBookBtn">Book Now</a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#fleet" class="nav-link">Fleet Collection</a></li>
+        <li><a href="#experience" class="nav-link">Luxury Services</a></li>
+        <li><a href="#details" class="nav-link">Operating Hours</a></li>
+        <li><a href="#booking" class="nav-link">Book a Vehicle</a></li>
+      </ul>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+        <a href="tel:+61396548888" class="nav-phone-quick" style="font-size: 1.1rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>+61 3 9654 8888</span>
+        </a>
+        <a href="#booking" class="btn-primary" style="width: 100%;">Reserve Your Vehicle</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- ==========================================================================
+           Hero Header Section
+           ========================================================================== -->
+      <section class="hero-section" id="hero">
+        <div class="hero-background">
+          <img 
+            src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=1920&auto=format&fit=crop" 
+            alt="Zenith Luxury Sports Car Fleet Background" 
+            class="hero-bg-image"
+            referrerpolicy="no-referrer"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-pulse"></span>
+            <span>Melbourne's Pinnacle Fleet</span>
+          </div>
+
+          <h1 class="hero-title">Zenith Luxury Car Rentals</h1>
+          <p class="hero-tagline">"Drive Your Dream. Experience the Extraordinary."</p>
+          <p class="hero-description">
+            Immerse yourself in world-class performance and unprecedented refinement. 
+            Curated exotic supercars, prestige grand tourers, and chauffeured luxury sedans delivered to your doorstep in Melbourne.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#fleet" class="btn-primary" id="heroExploreBtn">
+              <span>Explore Fleet</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#booking" class="btn-secondary" id="heroReserveBtn">
+              <span>Instant Reservation</span>
+            </a>
+          </div>
+
+          <!-- Hero Highlights / Perks -->
+          <div class="hero-perks">
+            <div class="perk-item">
+              <span class="perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <span>Comprehensive Elite Cover</span>
+            </div>
+            <div class="perk-item">
+              <span class="perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <span>24/7 VIP Concierge Dispatch</span>
+            </div>
+            <div class="perk-item">
+              <span class="perk-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span>230 Collins St & Airport Delivery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           Interactive Fleet Grid Section
+           ========================================================================== -->
+      <section class="fleet-section" id="fleet">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">Exquisite Engineering</span>
+            <h2 class="section-title">The Zenith Fleet Collection</h2>
+            <p class="section-subtitle">
+              Every vehicle in our prestige stable is maintained to uncompromising standards, ready to deliver spine-tingling performance and ultimate prestige.
+            </p>
+          </div>
+
+          <!-- Dynamic Category Filter Buttons -->
+          <div class="fleet-filter-bar" role="tablist" aria-label="Filter car categories">
+            <button type="button" class="filter-btn active" data-filter="all" id="filterBtnAll">All Fleet (9)</button>
+            <button type="button" class="filter-btn" data-filter="supercar" id="filterBtnSupercar">Supercars</button>
+            <button type="button" class="filter-btn" data-filter="sedan" id="filterBtnSedan">Luxury Sedans</button>
+            <button type="button" class="filter-btn" data-filter="suv" id="filterBtnSuv">Prestige SUVs</button>
+            <button type="button" class="filter-btn" data-filter="grand-tourer" id="filterBtnGt">Grand Tourers</button>
+          </div>
+
+          <!-- 3-Column Interactive Grid -->
+          <div class="fleet-grid" id="fleetGrid" aria-live="polite">
+            <!-- Rendered by JavaScript dynamically with complete cards, images, specs, and Rent Now buttons -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           Operating Details & Split-Screen Booking Form
+           ========================================================================== -->
+      <section class="booking-section" id="details">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 48px;">
+            <span class="section-tag">Concierge & Reservations</span>
+            <h2 class="section-title">Operating Details & Private Hire</h2>
+            <p class="section-subtitle">
+              Visit our flagship Collins Street showroom or arrange bespoke white-glove vehicle delivery anywhere in Victoria.
+            </p>
+          </div>
+
+          <div class="split-layout">
+            <!-- Left Side: Operating Details & Map Placeholder -->
+            <div class="operating-panel" id="operatingDetailsPanel">
+              <div class="panel-header">
+                <div class="live-status-pill open" id="liveStatusPill">
+                  <span class="live-status-dot"></span>
+                  <span id="liveStatusText">Loading Melbourne Showroom Status...</span>
+                </div>
+                <h3 class="panel-title">Melbourne Showroom & Lounge</h3>
+                <p class="panel-desc">Located in the prestigious heart of Melbourne's luxury retail and financial precinct.</p>
+              </div>
+
+              <div class="details-list">
+                <!-- Location -->
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Showroom Address</span>
+                    <span class="detail-value">230 Collins St, Melbourne VIC 3000, Australia</span>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Direct Concierge Line</span>
+                    <span class="detail-value">
+                      <a href="tel:+61396548888" class="text-gold">+61 3 9654 8888</a>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="detail-content" style="width: 100%;">
+                    <span class="detail-label">Showroom Operating Hours</span>
+                    <div class="hours-box">
+                      <div class="hours-row">
+                        <span>Monday to Saturday:</span>
+                        <span class="text-white" style="font-weight: 600;">7:00 AM – 11:00 PM</span>
+                      </div>
+                      <div class="hours-row sunday">
+                        <span>Sunday:</span>
+                        <span class="sunday-badge">Closed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map Background Image Placeholder Card -->
+              <div class="map-card-placeholder" id="mapPlaceholder">
+                <img 
+                  src="https://images.unsplash.com/photo-1514395462725-fb4566210144?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Collins Street Melbourne Map Area" 
+                  class="map-bg-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="map-card-overlay">
+                  <div class="map-pin-pulse">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div class="map-location-title">230 Collins St, Melbourne</div>
+                  <div class="map-location-sub">VIC 3000, Australia • Valet Parking Available</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Interactive Booking Form -->
+            <div class="booking-form-panel" id="booking">
+              <div class="panel-header" style="margin-bottom: 20px;">
+                <span class="section-tag" style="margin-bottom: 6px;">Reservation Engine</span>
+                <h3 class="panel-title">Book Your Vehicle</h3>
+                <p class="panel-desc">Select your dates and preferred luxury model for instant confirmation and VIP dispatch.</p>
+              </div>
+
+              <form class="booking-form" id="bookingForm" novalidate>
+                <!-- Dates Grid -->
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label for="pickupDate" class="form-label">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      Pick-up Date
+                    </label>
+                    <input type="date" id="pickupDate" name="pickupDate" class="form-control" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="dropoffDate" class="form-label">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      Drop-off Date
+                    </label>
+                    <input type="date" id="dropoffDate" name="dropoffDate" class="form-control" required />
+                  </div>
+                </div>
+
+                <!-- Category & Model Dropdowns -->
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label for="carCategory" class="form-label">Car Category</label>
+                    <select id="carCategory" name="carCategory" class="form-control" required>
+                      <option value="all">All Luxury Categories</option>
+                      <option value="supercar">Supercars</option>
+                      <option value="sedan">Luxury Sedans</option>
+                      <option value="suv">Prestige SUVs</option>
+                      <option value="grand-tourer">Grand Tourers</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="carModel" class="form-label">Select Vehicle Model</label>
+                    <select id="carModel" name="carModel" class="form-control" required>
+                      <!-- Dynamically populated from JS -->
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Pick-up Location & Insurance -->
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label for="pickupLocation" class="form-label">Dispatch Location</label>
+                    <select id="pickupLocation" name="pickupLocation" class="form-control">
+                      <option value="collins">230 Collins St Flagship Lounge</option>
+                      <option value="airport">Melbourne Tullamarine Airport (VIP Gate)</option>
+                      <option value="hotel">Crown Towers / Grand Hyatt Delivery</option>
+                      <option value="residence">Private Residence Delivery (Victoria)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="insuranceOption" class="form-label">Coverage & Service</label>
+                    <select id="insuranceOption" name="insuranceOption" class="form-control">
+                      <option value="standard">Standard Elite Insurance (Included)</option>
+                      <option value="vip-elite">Zero Excess VIP Protection (+$180/day)</option>
+                      <option value="chauffeur">Chauffeured Driver Service (+$450/day)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Driver Contact Details -->
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label for="clientName" class="form-label">Full Name</label>
+                    <input type="text" id="clientName" name="clientName" class="form-control" placeholder="e.g. Alexander Vance" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="clientPhone" class="form-label">Mobile Number</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" class="form-control" placeholder="+61 400 000 000" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientEmail" class="form-label">Email Address</label>
+                  <input type="email" id="clientEmail" name="clientEmail" class="form-control" placeholder="alexander@luxury.com.au" required />
+                </div>
+
+                <!-- Live Price Estimate Widget -->
+                <div class="price-estimate-box" id="priceEstimateBox">
+                  <div class="estimate-row">
+                    <span>Estimated Duration:</span>
+                    <span id="estimateDays" style="color: var(--text-white); font-weight: 600;">2 Days</span>
+                  </div>
+                  <div class="estimate-row">
+                    <span>Vehicle Base Rate:</span>
+                    <span id="estimateRate" style="color: var(--text-white); font-weight: 600;">$1,850/day</span>
+                  </div>
+                  <div class="estimate-row total">
+                    <span>Estimated Hire Total (AUD):</span>
+                    <span class="estimate-total-val" id="estimateTotal">$3,700 AUD</span>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn-primary" id="submitBookingBtn" style="width: 100%; padding: 16px;">
+                  <span>Confirm VIP Reservation</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           Luxury Experience Highlights
+           ========================================================================== -->
+      <section class="experience-section" id="experience">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-tag">The Zenith Difference</span>
+            <h2 class="section-title">White-Glove Prestige Service</h2>
+            <p class="section-subtitle">Crafted for discerning executives, international travelers, and automotive enthusiasts who accept only perfection.</p>
+          </div>
+
+          <div class="experience-grid">
+            <div class="experience-card">
+              <div class="exp-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <h3 class="exp-title">Pristine Fleet Curation</h3>
+              <p class="exp-desc">Every vehicle undergoes a 50-point mechanical inspection and Swissvax bespoke detailing before delivery.</p>
+            </div>
+
+            <div class="experience-card">
+              <div class="exp-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+              </div>
+              <h3 class="exp-title">VIP Doorstep Delivery</h3>
+              <p class="exp-desc">Direct private tarmac drop-off at Melbourne Airport or your five-star luxury hotel penthouse in the CBD.</p>
+            </div>
+
+            <div class="experience-card">
+              <div class="exp-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3 class="exp-title">Seamless Transparency</h3>
+              <p class="exp-desc">Transparent daily rates with no hidden mileage surcharges, express digital check-in, and instantaneous security bond release.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================================================
+         Minimalist Luxury Footer
+         ========================================================================== -->
+    <footer class="site-footer" id="siteFooter">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Brand Column -->
+          <div class="footer-brand">
+            <div class="brand-logo">
+              <div class="brand-crest">Z</div>
+              <div class="brand-text">
+                <span class="brand-name">Zenith</span>
+                <span class="brand-sub">Luxury Rentals</span>
+              </div>
+            </div>
+            <p class="footer-tagline">"Drive Your Dream. Experience the Extraordinary."</p>
+            <p class="footer-desc">
+              Melbourne's foremost boutique rental firm offering exotic sports cars, prestige sedans, and high-performance grand tourers.
+            </p>
+            <div class="social-icons-row">
+              <a href="#siteFooter" class="social-btn" aria-label="Instagram" id="socialInstagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </a>
+              <a href="#siteFooter" class="social-btn" aria-label="LinkedIn" id="socialLinkedin">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="#siteFooter" class="social-btn" aria-label="X Twitter" id="socialTwitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+              </a>
+              <a href="#siteFooter" class="social-btn" aria-label="Facebook" id="socialFacebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Navigation -->
+          <div class="footer-links-group">
+            <h4 class="footer-heading">Fleet Categories</h4>
+            <a href="#fleet" class="footer-link">Exotic Supercars</a>
+            <a href="#fleet" class="footer-link">Executive Sedans</a>
+            <a href="#fleet" class="footer-link">Prestige Luxury SUVs</a>
+            <a href="#fleet" class="footer-link">V12 Grand Tourers</a>
+            <a href="#fleet" class="footer-link">Chauffeured Vehicles</a>
+          </div>
+
+          <!-- Concierge Info -->
+          <div class="footer-links-group">
+            <h4 class="footer-heading">Melbourne Lounge</h4>
+            <span class="footer-link" style="color: var(--text-white);">230 Collins St</span>
+            <span class="footer-link">Melbourne VIC 3000</span>
+            <span class="footer-link">Australia</span>
+            <a href="tel:+61396548888" class="footer-link text-gold" style="font-weight: 600; margin-top: 6px;">+61 3 9654 8888</a>
+          </div>
+
+          <!-- Operating Hours Summary -->
+          <div class="footer-links-group">
+            <h4 class="footer-heading">Operating Hours</h4>
+            <span class="footer-link" style="color: var(--text-white);">Monday – Saturday</span>
+            <span class="footer-link text-gold">7:00 AM – 11:00 PM</span>
+            <span class="footer-link" style="margin-top: 4px; color: #f87171; font-weight: 600;">Sunday: Closed</span>
+            <span class="footer-link" style="font-size: 0.8rem; color: var(--text-dim);">*24/7 VIP airport delivery on request</span>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 Zenith Luxury Car Rentals. All Rights Reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="#siteFooter">Privacy Policy</a>
+            <a href="#siteFooter">Terms of Hire</a>
+            <a href="#siteFooter">Insurance Policy</a>
+            <a href="#siteFooter">Security Bond FAQs</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
+         Reservation Confirmation Modal
+         ========================================================================== -->
+    <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-container">
+        <div class="modal-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <h3 class="modal-title" id="modalTitle">Reservation Request Received</h3>
+        <p class="modal-text">
+          Thank you for choosing Zenith Luxury Car Rentals. Your VIP concierge reservation has been logged. Our Collins Street concierge team will contact you shortly to finalize delivery instructions.
+        </p>
+        <div class="modal-summary-box" id="modalSummary">
+          <!-- Populated dynamically via JS -->
+        </div>
+        <button type="button" class="btn-primary" id="closeModalBtn" style="width: 100%;">
+          Close & Return
+        </button>
+      </div>
+    </div>
+
+    <!-- Vanilla TS/JS Engine -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

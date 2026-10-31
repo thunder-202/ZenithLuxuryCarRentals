@@ -1,0 +1,6 @@
+{
+  "name": "Zenith Luxury Car Rentals",
+  "description": "Drive Your Dream. Experience the Extraordinary with Melbourne's premier luxury and supercar rental fleet at 230 Collins Street.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
